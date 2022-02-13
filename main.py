@@ -1,6 +1,6 @@
 from threading import Thread
-import playsound
 import VoiceHandeler
+import Functions as fun
 
 
 
@@ -11,7 +11,7 @@ Voice = VoiceHandeler.VoiceHandle()
 
 while(1):
     if(not listening and Voice.StartListening()):
-        Thread(target = playsound.playsound, args = ("AudioSources\slucham.mp3",)).start()
+        Thread(target=fun.Talk,args=("słucham",)).start()
         print("slucham")
         listening = True;
     if(listening):
