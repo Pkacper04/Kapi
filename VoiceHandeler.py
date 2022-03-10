@@ -69,6 +69,6 @@ class VoiceHandle:
         except KeyError:
             return False
 
-#This is a simple comment
+
 
 
