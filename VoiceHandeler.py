@@ -69,5 +69,5 @@ class VoiceHandle:
         except KeyError:
             return False
 
-#sd
+
 
