@@ -11,7 +11,6 @@ def Talk(speak):
     playsound.playsound("AudioSources/slucham.mp3")
     os.remove("AudioSources/slucham.mp3")
 
-
 def StopStart():
     Thread(target=Talk, args=("Zatrzymałem dla ciebie film", )).start()
     keyboard.press("space")

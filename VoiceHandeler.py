@@ -1,6 +1,5 @@
 import speech_recognition as sr
 import Functions as fun
-from threading import Thread
 
 
 class VoiceHandle:
@@ -60,7 +59,11 @@ class VoiceHandle:
 
     def Commands(self, command):
         try:
-            commandList = {"STOP":fun.StopStart,"DATA":fun.Date,"GODZINA":fun.Time}
+            commandList = {
+                "STOP":fun.StopStart,
+                "DATA":fun.Date,
+                "GODZINA":fun.Time
+            }
             commandList[command]()
             return True
         except KeyError:
